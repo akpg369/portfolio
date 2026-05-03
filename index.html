@@ -4,174 +4,234 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anupam Krishna P G | Cybersecurity Portfolio</title>
-  <meta name="description" content="Portfolio of Anupam Krishna P G — Offensive Security enthusiast, Penetration Tester, and CTF competitor." />
+  <meta name="description" content="Portfolio of Anupam Krishna P G — Offensive Security specialist, Penetration Tester, and CTF competitor based in Kalamassery, India." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <canvas id="matrix-canvas"></canvas>
 
+  <!-- NAV -->
   <nav id="navbar">
     <div class="nav-logo">
-      <span class="logo-bracket">[</span><span class="logo-text">AK</span><span class="logo-bracket">]</span>
+      <span class="logo-dot"></span>
+      Anupam Krishna
     </div>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#hero" class="nav-link">~/home</a></li>
-      <li><a href="#about" class="nav-link">~/about</a></li>
-      <li><a href="#skills" class="nav-link">~/skills</a></li>
-      <li><a href="#projects" class="nav-link">~/projects</a></li>
-      <li><a href="#ctf" class="nav-link">~/ctf</a></li>
-      <li><a href="#certs" class="nav-link">~/certs</a></li>
-      <li><a href="#contact" class="nav-link">~/contact</a></li>
+      <li><a href="#hero"         class="nav-link">Home</a></li>
+      <li><a href="#about"        class="nav-link">About</a></li>
+      <li><a href="#skills"       class="nav-link">Skills</a></li>
+      <li><a href="#projects"     class="nav-link">Projects</a></li>
+      <li><a href="#ctf"          class="nav-link">CTF</a></li>
+      <li><a href="#certs"        class="nav-link">Certifications</a></li>
+      <li><a href="#contact"      class="nav-link">Contact</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- ===== HERO ===== -->
+  <!-- HERO -->
   <section id="hero">
-    <div class="hero-content">
-      <div class="terminal-window">
-        <div class="terminal-header">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
-          <span class="terminal-title">anupam@kali:~$</span>
-        </div>
-        <div class="terminal-body" id="terminal-body">
-        </div>
+    <div class="hero-inner">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        Available for Internships &amp; Red Team Roles
       </div>
 
-      <div class="hero-text">
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          <span>Available for Internships &amp; Red Team Roles</span>
-        </div>
-        <h1 class="hero-name">
-          <span class="name-line">ANUPAM KRISHNA</span>
-          <span class="name-line accent">P G</span>
-        </h1>
-        <div class="hero-titles">
-          <span class="title-tag">&lt;</span>
-          <span id="rotating-title">Offensive Security</span>
-          <span class="title-tag">/&gt;</span>
-        </div>
-        <p class="hero-sub">Adversarial-minded security student hunting vulnerabilities before adversaries do.</p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary" id="cta-projects">&#x26A1; View Projects</a>
-          <a href="#contact"  class="btn btn-ghost"   id="cta-contact">&#x2709; Hire Me</a>
-        </div>
+      <h1 class="hero-name">
+        Anupam Krishna <span class="accent">P G</span>
+      </h1>
+
+      <p class="hero-role">
+        <strong>Cyber Security</strong> &nbsp;·&nbsp; <strong>Offensive Security</strong> &nbsp;·&nbsp; <strong>Penetration Testing</strong>
+      </p>
+
+      <p class="hero-sub">
+        Adversarial-minded security student on a mission to help organizations 
+        find and fix vulnerabilities before adversaries do.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="cta-projects">View Projects</a>
+        <a href="#contact"  class="btn btn-ghost"   id="cta-contact">Get in Touch</a>
       </div>
     </div>
-    <div class="scroll-indicator">
-      <div class="scroll-line"></div>
+
+    <div class="scroll-cue">
+      <div class="scroll-cue-bar"></div>
       <span>scroll</span>
     </div>
   </section>
 
-  <!-- ===== ABOUT ===== -->
+  <!-- ABOUT -->
   <section id="about">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">01.</span>
+        <span class="section-tag">01 / About</span>
         <h2 class="section-title">About <span class="accent">Me</span></h2>
         <div class="section-line"></div>
       </div>
+
       <div class="about-grid">
-        <div class="about-card glass-card">
-          <div class="about-avatar">
-            <div class="avatar-ring"></div>
-            <div class="avatar-inner">
-              <svg viewBox="0 0 80 80" fill="none">
-                <circle cx="40" cy="28" r="16" stroke="#00ff88" stroke-width="2"/>
-                <path d="M10 70c0-16.569 13.431-30 30-30s30 13.431 30 30" stroke="#00ff88" stroke-width="2"/>
-                <circle cx="40" cy="28" r="8" fill="#00ff8820"/>
-              </svg>
-            </div>
-            <div class="avatar-status"><span class="status-dot"></span><span>ONLINE</span></div>
+        <div class="about-profile-card card reveal">
+          <div class="profile-avatar">&#128100;</div>
+          <div class="profile-name">Anupam Krishna P G</div>
+          <div class="profile-role">Penetration Tester &amp; Security Researcher</div>
+          <div class="profile-status">
+            <span class="status-dot"></span> Open to Opportunities
           </div>
-          <div class="about-info">
-            <div class="info-row"><span class="info-label">Name</span><span class="info-value">Anupam Krishna P G</span></div>
-            <div class="info-row"><span class="info-label">Role</span><span class="info-value">Penetration Tester</span></div>
-            <div class="info-row"><span class="info-label">Education</span><span class="info-value">B.Tech IT — CUSAT</span></div>
+          <div class="profile-info">
             <div class="info-row"><span class="info-label">Location</span><span class="info-value">Kalamassery, India</span></div>
-            <div class="info-row"><span class="info-label">Email</span><span class="info-value">krishnapganupam@gmail.com</span></div>
+            <div class="info-row"><span class="info-label">Education</span><span class="info-value">B.Tech IT — CUSAT</span></div>
+            <div class="info-row"><span class="info-label">Year</span><span class="info-value">2023 – 2027</span></div>
             <div class="info-row"><span class="info-label">Phone</span><span class="info-value">+91 9746871890</span></div>
+            <div class="info-row"><span class="info-label">Email</span><span class="info-value">krishnapganupam@gmail.com</span></div>
           </div>
         </div>
 
-        <div class="about-text-block">
-          <p class="about-paragraph">I'm an <span class="highlight">adversarial-minded offensive security student</span> on a mission to help organizations find and fix vulnerabilities before adversaries do. My focus lies in simulating real-world attack chains — from reconnaissance and enumeration through exploitation and post-exploitation analysis.</p>
-          <p class="about-paragraph">Skilled with industry-standard offensive tooling including <span class="highlight">Metasploit, Burp Suite, Nmap, and Wireshark</span>, I actively sharpen my skills on <span class="highlight">TryHackMe</span> and <span class="highlight">Hack The Box</span> as a competitive CTF player.</p>
-          <p class="about-paragraph">Currently pursuing a <span class="highlight">B.Tech in Information Technology (2023–2027)</span> at CUSAT, Kalamassery, while targeting my <span class="highlight">eJPT</span> and eventually <span class="highlight">OSCP</span> certifications.</p>
-          <div class="stat-grid">
-            <div class="stat-card"><span class="stat-number">2+</span><span class="stat-label">Security Projects</span></div>
-            <div class="stat-card"><span class="stat-number">CEH</span><span class="stat-label">Certified</span></div>
-            <div class="stat-card"><span class="stat-number">CTF</span><span class="stat-label">Active Competitor</span></div>
+        <div class="about-content">
+          <p class="about-paragraph reveal">
+            I'm an <span class="highlight">adversarial-minded offensive security student</span> with a focus on 
+            simulating real-world attack chains — from reconnaissance and enumeration through exploitation 
+            and post-exploitation analysis. My goal is to help organizations identify and remediate 
+            vulnerabilities before adversaries can exploit them.
+          </p>
+          <p class="about-paragraph reveal">
+            Skilled with industry-standard offensive tooling including 
+            <span class="highlight">Metasploit, Burp Suite, Nmap,</span> and 
+            <span class="highlight">Wireshark</span>, I actively sharpen my skills on 
+            <span class="highlight">TryHackMe</span> and <span class="highlight">Hack The Box</span> 
+            as a competitive CTF player, and I write structured security audit reports 
+            following professional red-team standards.
+          </p>
+          <p class="about-paragraph reveal">
+            Currently pursuing a B.Tech in Information Technology at CUSAT while targeting 
+            the <span class="highlight">eJPT</span> certification as part of my path toward 
+            <span class="highlight">OSCP</span>.
+          </p>
+
+          <div class="stat-grid reveal">
+            <div class="stat-card">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Security Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">CEH</span>
+              <span class="stat-label">Certified</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">CTF</span>
+              <span class="stat-label">Active Competitor</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== SKILLS ===== -->
+  <!-- SKILLS -->
   <section id="skills">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">02.</span>
+        <span class="section-tag">02 / Skills</span>
         <h2 class="section-title">Core <span class="accent">Competencies</span></h2>
         <div class="section-line"></div>
       </div>
-      <p class="skills-intro">Offensive Security arsenal built through hands-on labs, CTFs, and real-world simulations.</p>
+      <p class="skills-intro">Offensive security arsenal built through hands-on labs, CTF competitions, and real-world simulations.</p>
+
       <div class="skills-grid">
-        <div class="skill-category glass-card">
-          <div class="skill-cat-header"><span class="skill-icon">&#127919;</span><h3>Tactics</h3></div>
+        <div class="skill-category card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">&#127919;</div>
+            <h3>Tactics</h3>
+          </div>
           <div class="skill-tags">
-            <span class="tag">Reconnaissance</span><span class="tag">Enumeration</span><span class="tag">Exploitation</span>
-            <span class="tag">Post-Exploitation</span><span class="tag">Privilege Escalation</span><span class="tag">Lateral Movement</span>
+            <span class="tag">Reconnaissance</span>
+            <span class="tag">Enumeration</span>
+            <span class="tag">Exploitation</span>
+            <span class="tag">Post-Exploitation</span>
+            <span class="tag">Privilege Escalation</span>
+            <span class="tag">Lateral Movement</span>
           </div>
         </div>
-        <div class="skill-category glass-card">
-          <div class="skill-cat-header"><span class="skill-icon">&#9876;&#65039;</span><h3>Attack Vectors</h3></div>
+
+        <div class="skill-category card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">&#9876;&#65039;</div>
+            <h3>Attack Vectors</h3>
+          </div>
           <div class="skill-tags">
-            <span class="tag">Network Penetration</span><span class="tag">Web App Testing</span><span class="tag">OWASP Top 10</span>
-            <span class="tag">DNS Spoofing</span><span class="tag">Port Scanning</span><span class="tag">Misconfiguration Abuse</span>
+            <span class="tag">Network Penetration</span>
+            <span class="tag">Web App Testing</span>
+            <span class="tag">OWASP Top 10</span>
+            <span class="tag">DNS Spoofing</span>
+            <span class="tag">Port Scanning</span>
+            <span class="tag">Misconfiguration Abuse</span>
           </div>
         </div>
-        <div class="skill-category glass-card">
-          <div class="skill-cat-header"><span class="skill-icon">&#128295;</span><h3>Tooling</h3></div>
+
+        <div class="skill-category card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">&#128295;</div>
+            <h3>Tooling</h3>
+          </div>
           <div class="skill-tags">
-            <span class="tag tag-green">Metasploit</span><span class="tag tag-green">Burp Suite</span><span class="tag tag-green">Nmap</span>
-            <span class="tag tag-green">Wireshark</span><span class="tag tag-green">Kali Linux</span><span class="tag tag-green">Netcat</span>
+            <span class="tag tag-indigo">Metasploit</span>
+            <span class="tag tag-indigo">Burp Suite</span>
+            <span class="tag tag-indigo">Nmap</span>
+            <span class="tag tag-indigo">Wireshark</span>
+            <span class="tag tag-indigo">Kali Linux</span>
+            <span class="tag tag-indigo">Netcat</span>
           </div>
         </div>
-        <div class="skill-category glass-card">
-          <div class="skill-cat-header"><span class="skill-icon">&#128187;</span><h3>Scripting</h3></div>
+
+        <div class="skill-category card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">&#128187;</div>
+            <h3>Scripting</h3>
+          </div>
           <div class="skill-tags">
-            <span class="tag tag-blue">Python</span><span class="tag tag-blue">Bash</span>
-            <span class="tag tag-blue">Automation</span><span class="tag tag-blue">Exploit PoCs</span>
+            <span class="tag tag-cyan">Python</span>
+            <span class="tag tag-cyan">Bash</span>
+            <span class="tag tag-cyan">Automation</span>
+            <span class="tag tag-cyan">Exploit PoCs</span>
           </div>
         </div>
-        <div class="skill-category glass-card">
-          <div class="skill-cat-header"><span class="skill-icon">&#127760;</span><h3>Protocols &amp; Methodology</h3></div>
+
+        <div class="skill-category card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">&#127760;</div>
+            <h3>Protocols &amp; Methodology</h3>
+          </div>
           <div class="skill-tags">
-            <span class="tag">ICMP</span><span class="tag">HTTPS</span><span class="tag">DNS</span><span class="tag">FTP</span><span class="tag">SSH</span>
-            <span class="tag">MITRE ATT&amp;CK</span><span class="tag">OWASP</span><span class="tag">Manual VA</span>
+            <span class="tag">ICMP</span>
+            <span class="tag">HTTPS</span>
+            <span class="tag">DNS</span>
+            <span class="tag">FTP</span>
+            <span class="tag">SSH</span>
+            <span class="tag">MITRE ATT&amp;CK</span>
+            <span class="tag">OWASP</span>
+            <span class="tag">Manual VA</span>
           </div>
         </div>
-        <div class="skill-category glass-card">
-          <div class="skill-cat-header"><span class="skill-icon">&#9729;&#65039;</span><h3>Cloud &amp; Platforms</h3></div>
+
+        <div class="skill-category card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">&#9729;&#65039;</div>
+            <h3>Cloud &amp; Platforms</h3>
+          </div>
           <div class="skill-tags">
-            <span class="tag tag-orange">AWS Fundamentals</span><span class="tag tag-orange">TryHackMe</span>
-            <span class="tag tag-orange">Hack The Box</span><span class="tag tag-orange">CTF Competitions</span>
+            <span class="tag tag-emerald">AWS Fundamentals</span>
+            <span class="tag tag-emerald">TryHackMe</span>
+            <span class="tag tag-emerald">Hack The Box</span>
+            <span class="tag tag-emerald">CTF Competitions</span>
           </div>
         </div>
       </div>
 
-      <div class="skill-bars-section">
+      <div class="skill-bars-wrap reveal">
         <h3 class="skill-bars-title">Proficiency Levels</h3>
         <div class="skill-bars">
           <div class="skill-bar-item">
@@ -199,106 +259,112 @@
     </div>
   </section>
 
-  <!-- ===== PROJECTS ===== -->
+  <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">03.</span>
+        <span class="section-tag">03 / Projects</span>
         <h2 class="section-title">Security <span class="accent">Projects</span></h2>
         <div class="section-line"></div>
       </div>
+
       <div class="projects-grid">
-        <div class="project-card glass-card">
-          <div class="project-header">
-            <div class="project-number">//01</div>
-            <div class="project-tags">
-              <span class="ptag">Reconnaissance</span><span class="ptag">Threat Detection</span><span class="ptag">DNS Spoofing</span>
-            </div>
-          </div>
+        <div class="project-card card reveal">
+          <div class="project-number">Project 01</div>
           <h3 class="project-title">Network Traffic Analysis &amp; Attack Simulation</h3>
           <div class="project-meta">
-            <span class="project-tool">&#128295; Wireshark</span>
-            <span class="project-year">&#128197; 2025</span>
+            <span>&#128295; Wireshark</span>
+            <span>&#128197; 2025</span>
           </div>
-          <p class="project-desc">Simulated an adversary's passive reconnaissance phase — capturing and analyzing live network traffic to uncover exploitable DNS spoofing vectors and plaintext HTTP credential exposure.</p>
+          <p class="project-desc">
+            Simulated an adversary's passive reconnaissance phase by capturing and analyzing 
+            live network traffic to uncover DNS spoofing vectors and plaintext HTTP credential exposure.
+          </p>
           <ul class="project-bullets">
-            <li>Mapped suspicious traffic to known MITRE ATT&amp;CK techniques from an attacker's perspective</li>
-            <li>Documented attack vectors with severity ratings &amp; mitigation recommendations</li>
-            <li>Produced a structured offensive findings report mirroring real-world red team deliverables</li>
+            <li>Mapped suspicious traffic patterns to MITRE ATT&amp;CK techniques from an attacker's perspective</li>
+            <li>Documented attack vectors with severity ratings &amp; actionable mitigation recommendations</li>
+            <li>Produced a structured offensive findings report mirroring professional red team deliverables</li>
           </ul>
-          <div class="project-footer">
-            <div class="project-stack">
-              <span class="stack-item">Wireshark</span><span class="stack-item">DNS Analysis</span>
-              <span class="stack-item">HTTP</span><span class="stack-item">PCAP</span>
-            </div>
+          <div class="project-tags">
+            <span class="tag tag-indigo">Wireshark</span>
+            <span class="tag tag-indigo">DNS Analysis</span>
+            <span class="tag">HTTP</span>
+            <span class="tag">PCAP</span>
+            <span class="tag">Reconnaissance</span>
           </div>
         </div>
 
-        <div class="project-card glass-card">
-          <div class="project-header">
-            <div class="project-number">//02</div>
-            <div class="project-tags">
-              <span class="ptag">Port Scanning</span><span class="ptag">Enumeration</span><span class="ptag">Audit Reporting</span>
-            </div>
-          </div>
+        <div class="project-card card reveal">
+          <div class="project-number">Project 02</div>
           <h3 class="project-title">Vulnerability Assessment &amp; Reconnaissance Lab</h3>
           <div class="project-meta">
-            <span class="project-tool">&#128295; Nmap</span>
-            <span class="project-year">&#128197; 2026</span>
+            <span>&#128295; Nmap</span>
+            <span>&#128197; 2026</span>
           </div>
-          <p class="project-desc">Conducted systematic active reconnaissance across multiple target hosts — mapping open ports, services, and exploitable misconfigurations an attacker could leverage for initial access.</p>
+          <p class="project-desc">
+            Conducted systematic active reconnaissance across multiple target hosts, mapping 
+            open ports, running services, and exploitable misconfigurations for initial access simulation.
+          </p>
           <ul class="project-bullets">
-            <li>Replicated attacker enumeration workflows identifying high-value targets &amp; weak service configs</li>
-            <li>Identified privilege escalation opportunities within isolated test environments</li>
-            <li>Delivered a formal pen-test style audit report with PoC exploitation paths &amp; remediation guidance</li>
+            <li>Replicated attacker enumeration workflows — identifying high-value targets &amp; weak service configs</li>
+            <li>Identified privilege escalation paths and lateral movement opportunities in isolated environments</li>
+            <li>Delivered a formal pen-test audit report with PoC exploitation paths &amp; remediation guidance</li>
           </ul>
-          <div class="project-footer">
-            <div class="project-stack">
-              <span class="stack-item">Nmap</span><span class="stack-item">Kali Linux</span>
-              <span class="stack-item">Port Scanning</span><span class="stack-item">PrivEsc</span>
-            </div>
+          <div class="project-tags">
+            <span class="tag tag-indigo">Nmap</span>
+            <span class="tag tag-indigo">Kali Linux</span>
+            <span class="tag">Port Scanning</span>
+            <span class="tag">PrivEsc</span>
+            <span class="tag">Enumeration</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== CTF ===== -->
+  <!-- CTF -->
   <section id="ctf">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">04.</span>
+        <span class="section-tag">04 / CTF</span>
         <h2 class="section-title">CTF &amp; Adversarial <span class="accent">Practice</span></h2>
         <div class="section-line"></div>
       </div>
+
       <div class="ctf-grid">
-        <div class="ctf-card glass-card">
-          <div class="ctf-icon">
-            <svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="28" stroke="#00ff88" stroke-width="2"/><path d="M20 30h20M30 20v20" stroke="#00ff88" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="30" r="8" fill="#00ff8820"/></svg>
-          </div>
+        <div class="ctf-card card reveal">
+          <div class="ctf-platform-icon" style="background:rgba(34,211,238,0.08);border:1px solid rgba(34,211,238,0.2)">&#128187;</div>
           <h3>TryHackMe</h3>
           <p>Progressing through the <strong>Jr. Penetration Tester</strong> and <strong>Red Teaming</strong> learning paths — structured offensive security training across real-world scenarios.</p>
-          <div class="ctf-badges"><span class="ctf-badge">Jr. Penetration Tester</span><span class="ctf-badge">Red Teaming</span></div>
-        </div>
-        <div class="ctf-card glass-card">
-          <div class="ctf-icon">
-            <svg viewBox="0 0 60 60" fill="none"><polygon points="30,5 55,20 55,40 30,55 5,40 5,20" stroke="#00cc66" stroke-width="2" fill="#00cc6610"/><circle cx="30" cy="30" r="8" stroke="#00cc66" stroke-width="2"/></svg>
+          <div class="ctf-badges">
+            <span class="ctf-badge">Jr. Penetration Tester</span>
+            <span class="ctf-badge">Red Teaming</span>
           </div>
+        </div>
+
+        <div class="ctf-card card reveal">
+          <div class="ctf-platform-icon" style="background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.2)">&#128230;</div>
           <h3>Hack The Box</h3>
           <p>Applying real-world enumeration and exploitation techniques against <strong>active machines</strong>, practicing exploit chaining, post-exploitation persistence, and lateral movement.</p>
-          <div class="ctf-badges"><span class="ctf-badge">Active Machines</span><span class="ctf-badge">Exploit Chaining</span></div>
-        </div>
-        <div class="ctf-card glass-card">
-          <div class="ctf-icon">
-            <svg viewBox="0 0 60 60" fill="none"><rect x="10" y="10" width="40" height="40" rx="5" stroke="#0088ff" stroke-width="2" fill="#0088ff10"/><path d="M20 30l8 8 12-16" stroke="#0088ff" stroke-width="2" stroke-linecap="round"/></svg>
+          <div class="ctf-badges">
+            <span class="ctf-badge">Active Machines</span>
+            <span class="ctf-badge">Exploit Chaining</span>
           </div>
+        </div>
+
+        <div class="ctf-card card reveal">
+          <div class="ctf-platform-icon" style="background:rgba(139,92,246,0.08);border:1px solid rgba(139,92,246,0.2)">&#127942;</div>
           <h3>CTF Competitions</h3>
-          <p>Active competitor focusing on <strong>web exploitation</strong>, <strong>privilege escalation</strong>, and <strong>binary challenges</strong> — sharpening adversarial instincts in competitive environments.</p>
-          <div class="ctf-badges"><span class="ctf-badge">Web Exploitation</span><span class="ctf-badge">Binary Challenges</span><span class="ctf-badge">PrivEsc</span></div>
+          <p>Active competitor focusing on <strong>web exploitation</strong>, <strong>privilege escalation</strong>, and <strong>binary challenges</strong> — continuously sharpening offensive instincts.</p>
+          <div class="ctf-badges">
+            <span class="ctf-badge">Web Exploitation</span>
+            <span class="ctf-badge">Binary Challenges</span>
+            <span class="ctf-badge">PrivEsc</span>
+          </div>
         </div>
       </div>
 
-      <div class="ctf-techniques glass-card">
+      <div class="techniques-panel reveal">
         <h3 class="techniques-title">Techniques Practiced</h3>
         <div class="techniques-grid">
           <div class="technique-item"><span class="technique-icon">&#128272;</span><span>Privilege Escalation</span></div>
@@ -312,51 +378,71 @@
     </div>
   </section>
 
-  <!-- ===== CERTS ===== -->
+  <!-- CERTS -->
   <section id="certs">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">05.</span>
+        <span class="section-tag">05 / Certifications</span>
         <h2 class="section-title"><span class="accent">Certifications</span> &amp; Goals</h2>
         <div class="section-line"></div>
       </div>
 
       <div class="certs-timeline">
-        <div class="cert-item cert-achieved">
-          <div class="cert-connector"><div class="cert-dot cert-dot-green"></div><div class="cert-line"></div></div>
-          <div class="cert-card glass-card">
-            <div class="cert-status status-achieved">&#9989; ACHIEVED</div>
+        <div class="cert-item reveal">
+          <div class="cert-connector">
+            <div class="cert-dot cert-dot-green"></div>
+            <div class="cert-line"></div>
+          </div>
+          <div class="cert-card card">
+            <div class="cert-status status-achieved">&#9989; Achieved</div>
             <h3 class="cert-name">Certified Ethical Hacker (CEH)</h3>
             <div class="cert-issuer">EC-Council</div>
             <p class="cert-note">Exam Passed — Certificate Pending</p>
-            <div class="cert-skills"><span class="cert-skill">Ethical Hacking</span><span class="cert-skill">Penetration Testing</span><span class="cert-skill">Vulnerability Assessment</span></div>
+            <div class="cert-skills">
+              <span class="cert-skill">Ethical Hacking</span>
+              <span class="cert-skill">Penetration Testing</span>
+              <span class="cert-skill">Vulnerability Assessment</span>
+            </div>
           </div>
         </div>
 
-        <div class="cert-item cert-inprogress">
-          <div class="cert-connector"><div class="cert-dot cert-dot-yellow"></div><div class="cert-line"></div></div>
-          <div class="cert-card glass-card">
-            <div class="cert-status status-inprogress">&#9203; IN PROGRESS</div>
+        <div class="cert-item reveal">
+          <div class="cert-connector">
+            <div class="cert-dot cert-dot-amber"></div>
+            <div class="cert-line"></div>
+          </div>
+          <div class="cert-card card">
+            <div class="cert-status status-inprogress">&#9203; In Progress</div>
             <h3 class="cert-name">eJPT — Junior Penetration Tester</h3>
             <div class="cert-issuer">eLearnSecurity</div>
             <p class="cert-note">Recommended entry-level red team certification</p>
-            <div class="cert-skills"><span class="cert-skill">Red Teaming</span><span class="cert-skill">Network Pentesting</span><span class="cert-skill">Web App Security</span></div>
+            <div class="cert-skills">
+              <span class="cert-skill">Red Teaming</span>
+              <span class="cert-skill">Network Pentesting</span>
+              <span class="cert-skill">Web App Security</span>
+            </div>
           </div>
         </div>
 
-        <div class="cert-item cert-target">
-          <div class="cert-connector"><div class="cert-dot cert-dot-purple"></div></div>
-          <div class="cert-card glass-card">
-            <div class="cert-status status-target">&#127919; FUTURE TARGET</div>
+        <div class="cert-item reveal">
+          <div class="cert-connector">
+            <div class="cert-dot cert-dot-indigo"></div>
+          </div>
+          <div class="cert-card card">
+            <div class="cert-status status-target">&#127919; Future Target</div>
             <h3 class="cert-name">OSCP — Offensive Security Certified Professional</h3>
             <div class="cert-issuer">Offensive Security</div>
             <p class="cert-note">Gold standard for penetration testing roles</p>
-            <div class="cert-skills"><span class="cert-skill">Advanced Exploitation</span><span class="cert-skill">Buffer Overflows</span><span class="cert-skill">Active Directory</span></div>
+            <div class="cert-skills">
+              <span class="cert-skill">Advanced Exploitation</span>
+              <span class="cert-skill">Buffer Overflows</span>
+              <span class="cert-skill">Active Directory</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="education-block glass-card">
+      <div class="education-card card reveal">
         <div class="edu-icon">&#127891;</div>
         <div class="edu-content">
           <h3>B.Tech in Information Technology (Pursuing)</h3>
@@ -365,76 +451,92 @@
             <span class="edu-location">&#128205; Kalamassery, Kerala</span>
             <span class="edu-year">&#128197; 2023 – 2027</span>
           </div>
-          <p class="edu-note">Combining academic foundations in IT with deep hands-on research in offensive security.</p>
+          <p class="edu-note">Bridging academic foundations in IT with deep hands-on research in offensive security.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== PROFESSIONAL SKILLS ===== -->
+  <!-- PROFESSIONAL SKILLS -->
   <section id="professional">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">06.</span>
+        <span class="section-tag">06 / Professional</span>
         <h2 class="section-title">Professional <span class="accent">Skills</span></h2>
         <div class="section-line"></div>
       </div>
       <div class="prof-grid">
-        <div class="prof-card glass-card">
-          <div class="prof-icon">&#129504;</div>
+        <div class="prof-card card reveal">
+          <div class="prof-icon-wrap">&#129504;</div>
           <h3>Adversarial Mindset</h3>
           <p>Ability to think like an attacker — anticipating, identifying, and exploiting security weaknesses to surface risks before they become incidents.</p>
         </div>
-        <div class="prof-card glass-card">
-          <div class="prof-icon">&#128221;</div>
+        <div class="prof-card card reveal">
+          <div class="prof-icon-wrap">&#128221;</div>
           <h3>Technical Report Writing</h3>
-          <p>Translating complex offensive findings into actionable, audience-appropriate recommendations for both technical teams and executive stakeholders.</p>
+          <p>Translating complex offensive findings into actionable recommendations for both technical teams and executive stakeholders.</p>
         </div>
-        <div class="prof-card glass-card">
-          <div class="prof-icon">&#128640;</div>
+        <div class="prof-card card reveal">
+          <div class="prof-icon-wrap">&#128640;</div>
           <h3>Self-Directed Learner</h3>
-          <p>Continuously improving through hands-on labs, CTFs, and independent research — driven by curiosity and a commitment to staying ahead of modern threats.</p>
+          <p>Continuously improving through hands-on labs, CTFs, and independent research, driven by curiosity and a commitment to staying ahead of modern threats.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== CONTACT ===== -->
+  <!-- CONTACT -->
   <section id="contact">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">07.</span>
+        <span class="section-tag">07 / Contact</span>
         <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
         <div class="section-line"></div>
       </div>
       <div class="contact-wrapper">
         <div class="contact-info">
-          <p class="contact-intro">I'm actively seeking <span class="highlight">Red Team internships</span> and <span class="highlight">entry-level Penetration Tester</span> roles. If you're looking for an adversarial-minded security professional, let's connect.</p>
+          <p class="contact-intro">
+            I'm actively seeking <span class="highlight">Red Team internships</span> and 
+            <span class="highlight">entry-level Penetration Tester</span> roles. 
+            If you're looking for a driven, adversarial-minded security professional, let's talk.
+          </p>
           <div class="contact-links">
             <a href="mailto:krishnapganupam@gmail.com" class="contact-link">
-              <span class="contact-link-icon">&#128231;</span>
-              <div><span class="contact-link-label">Email</span><span class="contact-link-value">krishnapganupam@gmail.com</span></div>
+              <div class="contact-link-icon">&#128231;</div>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">krishnapganupam@gmail.com</span>
+              </div>
             </a>
             <a href="tel:+919746871890" class="contact-link">
-              <span class="contact-link-icon">&#128222;</span>
-              <div><span class="contact-link-label">Phone</span><span class="contact-link-value">+91 9746871890</span></div>
+              <div class="contact-link-icon">&#128222;</div>
+              <div>
+                <span class="contact-link-label">Phone</span>
+                <span class="contact-link-value">+91 9746871890</span>
+              </div>
             </a>
             <div class="contact-link">
-              <span class="contact-link-icon">&#128187;</span>
-              <div><span class="contact-link-label">TryHackMe</span><span class="contact-link-value">Active Player</span></div>
+              <div class="contact-link-icon">&#128187;</div>
+              <div>
+                <span class="contact-link-label">TryHackMe</span>
+                <span class="contact-link-value">Active Player</span>
+              </div>
             </div>
             <div class="contact-link">
-              <span class="contact-link-icon">&#128230;</span>
-              <div><span class="contact-link-label">Hack The Box</span><span class="contact-link-value">Active Player</span></div>
+              <div class="contact-link-icon">&#128230;</div>
+              <div>
+                <span class="contact-link-label">Hack The Box</span>
+                <span class="contact-link-value">Active Player</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <form class="contact-form glass-card" id="contact-form">
+        <form class="contact-form card reveal" id="contact-form">
           <h3 class="form-title">Send a Message</h3>
           <div class="form-group">
             <label for="fname">Name</label>
-            <input type="text" id="fname" name="name" placeholder="Your name" />
+            <input type="text" id="fname" name="name" placeholder="Your full name" />
           </div>
           <div class="form-group">
             <label for="femail">Email</label>
@@ -444,20 +546,21 @@
             <label for="fmessage">Message</label>
             <textarea id="fmessage" name="message" rows="4" placeholder="Tell me about the opportunity..."></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">&#x26A1; Send Message</button>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">Send Message</button>
           <div id="form-feedback" class="form-note"></div>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- FOOTER -->
   <footer id="footer">
     <div class="footer-inner">
       <div class="footer-logo">
-        <span class="logo-bracket">[</span><span class="logo-text">ANUPAM KRISHNA P G</span><span class="logo-bracket">]</span>
+        <span class="logo-dot"></span>
+        Anupam Krishna P G
       </div>
-      <p class="footer-tagline">Offensive Security | Penetration Testing | CTF</p>
+      <p class="footer-tagline">Offensive Security &nbsp;·&nbsp; Penetration Testing &nbsp;·&nbsp; CTF</p>
       <p class="footer-copy">&copy; 2026 Anupam Krishna P G</p>
     </div>
   </footer>
