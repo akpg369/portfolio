@@ -133,41 +133,7 @@
     }, 3000);
   }
 
-  /* =======================================================
-     7. CONTACT FORM
-     ======================================================= */
-  const form     = document.getElementById("contact-form");
-  const feedback = document.getElementById("form-feedback");
-  const submitBtn= document.getElementById("submit-btn");
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const name    = document.getElementById("fname").value.trim();
-    const email   = document.getElementById("femail").value.trim();
-    const message = document.getElementById("fmessage").value.trim();
-
-    if (!name || !email || !message) {
-      feedback.textContent = "Please fill in all fields.";
-      feedback.className = "form-note error";
-      return;
-    }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      feedback.textContent = "Please enter a valid email address.";
-      feedback.className = "form-note error";
-      return;
-    }
-
-    submitBtn.disabled = true;
-    submitBtn.textContent = "Sending…";
-
-    setTimeout(() => {
-      feedback.textContent = `Thanks, ${name}! I'll be in touch shortly.`;
-      feedback.className = "form-note success";
-      form.reset();
-      submitBtn.disabled = false;
-      submitBtn.textContent = "Send Message";
-    }, 1200);
-  });
 
   /* =======================================================
      8. SUBTLE CARD TILT on hover (desktops only)
